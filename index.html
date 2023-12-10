@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páginita para fer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div id="contenedor">
+        <h1 class="titulo">Feliz dia mi niña ♥ </h1>
+        <p class="parrafo">Para poder entrar primero dime:</p>
+
+        <label for="input-fecha">¿Desde cuando somos novios? 😡</label>
+        <input type="text" id="input-fecha" name="fecha" required placeholder="Dia/Mes/Año">
+
+        <button class="boton-ingreso">Ingresar</button>
+
+        <img src="./imagenes/pompompurin.png">
+     </div>
+
+     <section id="carta">
+        <img src="./imagenes/carta.png" alt="imagen de carta">
+   
+        <div class="boton-modal">
+            <label for="btn-modal">
+                Abrir Carta
+            </label>
+        </div>
+        
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2>Hola bonita 💖</h2>
+                <p>Primero que nadaa quiero que sepas que te amo muuucho❤❤ Y ya todo este tiempo que llevamos juntos a sido increiblee, aun recuerdo la primera vez que no tomamos de la mano y los dos andabamos bien nerviosos y tambien cuando fuimos por los pastes, creo que fue muy bonito esa vez sentarnos y solo conocernos un poco mas:3 <br> Ya tengo un montoooon de cosas que me has dado y soy muy felii y creo que el domingo tendre muchas mas y las cuidare con mucho amor como me las daaas c: Te amoooo demasiado, no sabes cuantooo, cada que te veo te ves mas y mas linda, eres mi niña bonita y aaaa como me gusta que estes siempre para mi y seas mia nadamas, creeme que todos estos momentos  que hemos pasado cada vez son mejores y no digaas todo este tiempo se a pasado super rapido pero yo soy feliz de estar con alguien como tú. <br> Alguien con quien siempre es linda conmigo, me apapacha, me hace muy feliz, me hace cartitas, siempre esta pendiente de mi yyy creo que nunca acabaria. Alguien que me a ayudado en muchas cosas y sobre todo que me ama muchito<br> Sin duda alguna sé que estoy con la mejor persona que existeee. Nunca dudes que yo tambien estare para ti siempre siempre, y oyeee solo te vengo a recordarte que te amo asi tal como tú eres y no sabes cuantooo:3 Asi que solo puedo decir que me gustas muchitoooooo y todas las cosas contigo siempre son muy especiales solo porque estoy contigo y cada vez te amito mucho maaas. Pd: Ya no puedo escribir mas pq se vera mal pero en las cartitas se complementa❤ </p>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">Cerrar</label>
+                </div>
+            </div>
+        </div>
+
+        <button id="siguiente" class="boton-continuar">Continuar</button>
+
+     </section>
+
+     <section id="recuerdos">
+        <div class="imagenes-recuerdos">
+            <p class="parrafo-recuerdo">Recuerdos<33</p>   
+
+            <img src="./imagenes/carta.png" alt="imagen1" id="imagen1" onclick="alternarContenido()">
+
+            <div id="contenido-oculto">
+                <img src="./imagenes/recuerdo1.jpg" class="imagenes-recuerdos">
+                <p id="texto-oculto">Recuerdas ese dia? Nuestra primera foto y que según me voltie cuando me quisiste dar un beso ajsak</p>
+
+                <img src="./imagenes/recuerdo4.jpg" class="imagenes-recuerdos" id="imagen-parque">
+                <p id="texto-oculto">Y que tal este diaaa? Ibamos mucho al parque c:</p>
+            </div>
+
+            <button class="btn-continuar">Continuar</button>
+
+        </div>
+     </section>
+
+     <section id="recuerdos-pt2">
+        <div class="imagenes-recuerdos" id="content">
+            <p class="parrafo-recuerdo">Recuerdos<33</p>   
+
+            <img src="./imagenes/carta.png" alt="imagen2" id="imagen2" onclick="alternarContenido2()">
+
+            <div id="contenido-oculto2">
+                <img src="./imagenes/recuerdo2.jpg" class="imagenes-recuerdos" id="imagen-cumple">
+                <p id="texto-oculto">Aqui un pequeño salto en el tiempo cuando fuimos a chapultepec por tu cumpleaños:3 Fue muy lindo ese diaaa</p>
+
+                <img src="./imagenes/recuerdo3.jpg" class="imagenes-recuerdos" id="imagen-cumple2">
+                <p id="texto-oculto">Este es mas reciente y nos vemos bien lindoooos, muy lujuriosos tambien ajsja</p>
+
+            </div>
+
+            <!-- <button class="btn-continuar3">Continuar</button> -->
+
+        </div>
+     </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
